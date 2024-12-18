@@ -214,3 +214,10 @@ a:hover {
   background-color: rgb(92, 163, 78);
   color: white;
 }
+
+/* top-charts */
+.top-charts {
+  width: 100%;
+  display: flex;
+  padding: 0.5em 4em;
+}
