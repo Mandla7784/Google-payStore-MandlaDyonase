@@ -54,3 +54,9 @@ a:hover {
 .hide-page {
   display: none;
 }
+.hero-are {
+  display: flex;
+  gap: 4em;
+  width: 100%;
+  padding: 0.4em 4em;
+}
