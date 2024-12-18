@@ -7,5 +7,6 @@ const routePages = document.querySelectorAll(".page");
 
 // hide each page
 routePages.forEach((page) => {
-  console.log(page);
+  const pageId = page.id;
+  console.log(pageId);
 });
