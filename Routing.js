@@ -8,13 +8,16 @@ const routePages = document.querySelectorAll(".page");
 // hide each page
 routePages.forEach((page) => {
   const pageId = page.id;
-
   // get the links
-  const routeLinks = document.querySelectorAll(".link");
 
+  const routeLinks = document.querySelectorAll(".link");
   routeLinks.forEach((link) => {
+    const path = link.href.split("#")[1];
+
     link.addEventListener("click", () => {
-      console.log("Rouiting");
+      if (path === pageId) {
+        console.log(true);
+      }
     });
   });
 });
