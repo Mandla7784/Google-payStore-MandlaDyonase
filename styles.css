@@ -26,6 +26,7 @@
   color: var(--text-color);
   text-decoration: none;
   font-weight: bold;
+  transition: all ease 0.3s;
 }
 
 .device-catergories {
@@ -40,3 +41,10 @@
   border-radius: 15px;
   text-decoration: none;
 }
+
+/* link hover */
+a:hover {
+  color: rgb(25, 141, 64);
+}
+
+/* main */
