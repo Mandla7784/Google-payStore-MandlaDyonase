@@ -1,0 +1,102 @@
+[
+  {
+    "rank": 1,
+    "app_name": "WhatsApp Messenger",
+    "developer": "Meta Platforms, Inc.",
+    "category": "Communication",
+    "rating": 4.3,
+    "downloads": "5B+",
+    "price": "Free",
+    "icon_url": "https://example.com/icons/whatsapp.png"
+  },
+  {
+    "rank": 2,
+    "app_name": "Instagram",
+    "developer": "Meta Platforms, Inc.",
+    "category": "Social",
+    "rating": 4.5,
+    "downloads": "1B+",
+    "price": "Free",
+    "icon_url": "https://example.com/icons/instagram.png"
+  },
+  {
+    "rank": 3,
+    "app_name": "Subway Surfers",
+    "developer": "SYBO Games",
+    "category": "Arcade",
+    "rating": 4.6,
+    "downloads": "1B+",
+    "price": "Free",
+    "icon_url": "https://example.com/icons/subway_surfers.png"
+  },
+  {
+    "rank": 4,
+    "app_name": "Spotify",
+    "developer": "Spotify Ltd.",
+    "category": "Music & Audio",
+    "rating": 4.4,
+    "downloads": "1B+",
+    "price": "Free with In-App Purchases",
+    "icon_url": "https://example.com/icons/spotify.png"
+  },
+  {
+    "rank": 5,
+    "app_name": "TikTok",
+    "developer": "ByteDance",
+    "category": "Entertainment",
+    "rating": 4.2,
+    "downloads": "2B+",
+    "price": "Free",
+    "icon_url": "https://example.com/icons/tiktok.png"
+  },
+  {
+    "rank": 6,
+    "app_name": "Candy Crush Saga",
+    "developer": "King",
+    "category": "Puzzle",
+    "rating": 4.7,
+    "downloads": "1B+",
+    "price": "Free with In-App Purchases",
+    "icon_url": "https://example.com/icons/candy_crush_saga.png"
+  },
+  {
+    "rank": 7,
+    "app_name": "YouTube",
+    "developer": "Google LLC",
+    "category": "Video Players & Editors",
+    "rating": 4.1,
+    "downloads": "10B+",
+    "price": "Free",
+    "icon_url": "https://example.com/icons/youtube.png"
+  },
+  {
+    "rank": 8,
+    "app_name": "Facebook",
+    "developer": "Meta Platforms, Inc.",
+    "category": "Social",
+    "rating": 4.2,
+    "downloads": "5B+",
+    "price": "Free",
+    "icon_url": "https://example.com/icons/facebook.png"
+  },
+  {
+    "rank": 9,
+    "app_name": "Duolingo",
+    "developer": "Duolingo",
+    "category": "Education",
+    "rating": 4.8,
+    "downloads": "500M+",
+    "price": "Free with In-App Purchases",
+    "icon_url": "https://example.com/icons/duolingo.png"
+  },
+  {
+    "rank": 10,
+    "app_name": "Netflix",
+    "developer": "Netflix, Inc.",
+    "category": "Entertainment",
+    "rating": 4.5,
+    "downloads": "1B+",
+    "price": "Free with Subscription",
+    "icon_url": "https://example.com/icons/netflix.png"
+  }
+]
