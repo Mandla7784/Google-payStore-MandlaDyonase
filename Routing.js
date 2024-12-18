@@ -8,5 +8,8 @@ const routePages = document.querySelectorAll(".page");
 // hide each page
 routePages.forEach((page) => {
   const pageId = page.id;
-  console.log(pageId);
+
+  // get the links
+  const routeLinks = document.querySelectorAll(".link");
+  console.log(routeLinks);
 });
