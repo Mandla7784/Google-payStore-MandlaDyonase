@@ -4,18 +4,14 @@
  * get all the links and add events
  */
 const routePages = document.querySelectorAll(".page");
-
-// hide each page
 routePages.forEach((page) => {
+  page.classList.add("hide-page");
   const pageId = page.id;
-  // get the links
-
   const routeLinks = document.querySelectorAll(".link");
   routeLinks.forEach((link) => {
     const path = link.href.split("#")[1];
-
     link.addEventListener("click", () => {
-      if (path === pageId) {
+      if (pageId === path) {
         console.log(true);
       }
     });

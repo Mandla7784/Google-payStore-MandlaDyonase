@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="styles.css" />
+    <script defer src="Routing.js"></script>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
@@ -12,6 +13,14 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <style>
+      .hide-page {
+        display: none;
+      }
+      .show-page {
+        display: block;
+      }
+    </style>
   </head>
   <body>
     <nav class="google-navbar">
@@ -33,20 +42,18 @@
       <a href="">Tablet</a>
       <a href="">TV</a>
     </div>
-    <main>
-      <div class="page" id="games">
-        <h3>Play your favourites on the big screen</h3>
-      </div>
-      <div class="page" id="apps">
-        <p>Google Play Games on PC</p>
-      </div>
-      <div class="page" id="movies">
-        <h3>Google Movies</h3>
-      </div>
-      <div class="page" id="books">
-        <h3>Books</h3>
-      </div>
-    </main>
-    <script src="Routing.js"></script>
+
+    <div class="page" id="games">
+      <h3>Play your favourites on the big screen</h3>
+    </div>
+    <div class="page" id="apps">
+      <p>Google Play Games on PC</p>
+    </div>
+    <div class="page" id="movies">
+      <h3>Google Movies</h3>
+    </div>
+    <div class="page" id="books">
+      <h3>Books</h3>
+    </div>
   </body>
 </html>
