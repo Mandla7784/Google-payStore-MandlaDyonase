@@ -9,19 +9,23 @@
 :root {
   --text-color: rgb(66, 66, 66);
 }
+
 .google-navbar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 0.5em 2em;
 }
+
 .logo-heading {
   color: var(--text-color);
 }
+
 .google-navbar ul {
   display: flex;
   gap: 2em;
 }
+
 .google-navbar ul a {
   color: var(--text-color);
   text-decoration: none;
@@ -35,6 +39,7 @@
   gap: 40px;
   margin-left: 4em;
 }
+
 .device-catergories a {
   padding: 0.9em 2em;
   background-color: whitesmoke;
@@ -42,35 +47,51 @@
   text-decoration: none;
 }
 
-/* link hover */
+/* Link hover */
 a:hover {
   color: rgb(25, 141, 64);
 }
 
-/* main */
+/* Main */
 .show-page {
   display: block;
 }
+
 .hide-page {
   display: none;
 }
+
 .hero-are {
   display: flex;
   gap: 4em;
   width: 100%;
   padding: 0.4em 4em;
 }
+
 .playnow {
   position: relative;
   background-image: url("./public/hero.jpeg");
   background-repeat: no-repeat;
-  background-size: contain;
+  background-size: cover;
   width: 400px;
   height: 300px;
   border-radius: 5px;
   cursor: pointer;
   background-color: rgb(53, 119, 70);
 }
+
+.playnow::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 5px;
+  z-index: 1;
+}
+
 .playnow .content {
   position: absolute;
   color: whitesmoke;
@@ -80,7 +101,9 @@ a:hover {
   justify-content: center;
   align-items: center;
   font-size: 58px;
+  z-index: 2;
 }
+
 .headline {
   background-color: #e8f0fe;
   height: 100px;
@@ -90,18 +113,8 @@ a:hover {
 }
 
 /* Games */
-.card-1 {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
-  margin: 20px;
-  max-width: 300px;
-  background-image: url("./public/Best-Poki-Games-in-2023-copy.webp");
-  backdrop-filter: 10px;
-}
-
+.card-1,
+.card-2,
 .card-3 {
   background-color: #ffffff;
   border-radius: 10px;
@@ -110,27 +123,41 @@ a:hover {
   transition: transform 0.2s;
   margin: 20px;
   max-width: 300px;
-  background-image: url("./public/game1.avif");
-  backdrop-filter: 10px;
-}
-.card-2 {
-  background-color: #ffffff;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  overflow: hidden;
-  transition: transform 0.2s;
-  margin: 20px;
-  max-width: 300px;
-  background-image: url("./public/game2.jpeg");
-  backdrop-filter: 10px;
+  position: relative;
 }
 
-.card-1:hover {
-  transform: scale(1.05);
+.card-1::after,
+.card-2::after,
+.card-3::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+.card-1 {
+  background-image: url("./public/Best-Poki-Games-in-2023-copy.webp");
+  background-size: cover;
+}
+
+.card-2 {
+  background-image: url("./public/game2.jpeg");
+  background-size: cover;
+}
+
+.card-3 {
+  background-image: url("./public/game1.avif");
+  background-size: cover;
 }
 
 .card-content {
   padding: 20px;
+  position: relative;
+  z-index: 2;
 }
 
 .price {
@@ -162,4 +189,15 @@ a:hover {
 
 .card-button:hover {
   background-color: #0056b3;
+}
+
+.card-1:hover,
+.card-2:hover,
+.card-3:hover {
+  transform: scale(1.05);
+}
+
+.games-container {
+  width: 100%;
+  display: flex;
 }
