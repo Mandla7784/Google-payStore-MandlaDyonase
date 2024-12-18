@@ -17,18 +17,35 @@ async function getTopChart(path) {
   } catch (error) {}
 }
 
-// //    "rank": 1,
-//     "app_name": "WhatsApp Messenger",
-//     "developer": "Meta Platforms, Inc.",
-//     "category": "Communication",
-//     "rating": 4.3,
-//     "downloads": "5B+",
-//     "price": "Free",
-//     "icon_url
-
 function displayCharts(charts_list) {
   charts_list.forEach((chart) => {
-    const {} = chart;
+    const {
+      app_name,
+      developer,
+      category,
+      rank,
+      rating,
+      downloads,
+      price,
+      icon_url,
+    } = chart;
+
+    topChartDivContainer.innerHTML = /*html*/ `
+     
+        <div class="chart-card">
+            <img src="${icon_url}" />
+            <div class="card-content">
+                <h3>${app_name}</h3>
+                <h4>${category}</h4>
+                <h5>${developer}</h5>
+                <p>downloads:${downloads}</p>
+                <p>${price}</p>
+                <p>${rank}</p>
+            
+            </div>
+         </div>
+     
+     `;
   });
 }
 
