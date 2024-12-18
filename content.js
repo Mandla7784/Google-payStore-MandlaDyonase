@@ -35,18 +35,18 @@ function displayCharts(charts_list) {
     console.log(app_name, developer);
     topChartDivContainer.innerHTML += /*html*/ `
      
-        <div class="chart-card">
-            <img src="${icon_url}" />
-            <div class="card-content">
-                <h3>${app_name}</h3>
-                <h4>${category}</h4>
-                <h5>${developer}</h5>
-                <p>downloads:${downloads}</p>
-                <p>${price}</p>
-                <p>${rank}</p>
-            
-            </div>
-         </div>
+    <div class="chart-card">
+    <img src="${icon_url}" alt="${app_name} Icon" class="card-icon" />
+    <div class="card-content">
+        <h3 class="app-name">${app_name}</h3>
+        <h4 class="category">${category}</h4>
+        <h5 class="developer">${developer}</h5>
+        <p class="downloads">Downloads: ${downloads}</p>
+        <p class="price">${price}</p>
+        <p class="rank">Rank: ${rank}</p>
+    </div>
+</div>
+
      
      `;
   });
