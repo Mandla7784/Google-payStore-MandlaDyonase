@@ -7,7 +7,7 @@
     "rating": 4.3,
     "downloads": "5B+",
     "price": "Free",
-    "icon_url": "https://example.com/icons/whatsapp.png"
+    "icon_url": "https://store-images.s-microsoft.com/image/apps.8453.13655054093851568.4a371b72-2ce8-4bdb-9d83-be49894d3fa0.7f3687b9-847d-4f86-bb5c-c73259e2b38e"
   },
   {
     "rank": 2,
@@ -17,7 +17,7 @@
     "rating": 4.5,
     "downloads": "1B+",
     "price": "Free",
-    "icon_url": "https://example.com/icons/instagram.png"
+    "icon_url": "https://i.pinimg.com/1200x/e3/da/7b/e3da7bd831f33193359f78c86d8c250a.jpg"
   },
   {
     "rank": 3,
@@ -27,7 +27,7 @@
     "rating": 4.6,
     "downloads": "1B+",
     "price": "Free",
-    "icon_url": "https://example.com/icons/subway_surfers.png"
+    "icon_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR_QHL2_9VilHy4_uV1I0kOVrodHvXKB4YLJg&s"
   },
   {
     "rank": 4,
@@ -37,7 +37,7 @@
     "rating": 4.4,
     "downloads": "1B+",
     "price": "Free with In-App Purchases",
-    "icon_url": "https://example.com/icons/spotify.png"
+    "icon_url": "https://m.media-amazon.com/images/I/51rttY7a+9L.png"
   },
   {
     "rank": 5,
@@ -47,8 +47,9 @@
     "rating": 4.2,
     "downloads": "2B+",
     "price": "Free",
-    "icon_url": "https://example.com/icons/tiktok.png"
+    "icon_url": "https://store-images.s-microsoft.com/image/apps.47495.13634052595610511.c45457c9-b4af-46b0-8e61-8d7c0aec3f56.a8b71481-8a43-465d-88d6-e63add92c112"
   },
+
   {
     "rank": 6,
     "app_name": "Candy Crush Saga",
@@ -57,7 +58,7 @@
     "rating": 4.7,
     "downloads": "1B+",
     "price": "Free with In-App Purchases",
-    "icon_url": "https://example.com/icons/candy_crush_saga.png"
+    "icon_url": "https://store-images.s-microsoft.com/image/apps.7458.13510798882606697.b6a31126-a832-4c65-8788-783028e60938.f9619292-7e34-4b90-b30f-98c1ff47cd7f"
   },
   {
     "rank": 7,
@@ -67,7 +68,7 @@
     "rating": 4.1,
     "downloads": "10B+",
     "price": "Free",
-    "icon_url": "https://example.com/icons/youtube.png"
+    "icon_url": "https://lh3.googleusercontent.com/3zkP2SYe7yYoKKe47bsNe44yTgb4Ukh__rBbwXwgkjNRe4PykGG409ozBxzxkrubV7zHKjfxq6y9ShogWtMBMPyB3jiNps91LoNH8A=s500"
   },
   {
     "rank": 8,
@@ -77,7 +78,7 @@
     "rating": 4.2,
     "downloads": "5B+",
     "price": "Free",
-    "icon_url": "https://example.com/icons/facebook.png"
+    "icon_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"
   },
   {
     "rank": 9,
@@ -87,7 +88,7 @@
     "rating": 4.8,
     "downloads": "500M+",
     "price": "Free with In-App Purchases",
-    "icon_url": "https://example.com/icons/duolingo.png"
+    "icon_url": "https://play-lh.googleusercontent.com/DsyWoouXk7psjF7DCG6MJj_rX9RR9-liQskZXoKvcqQIu_ybUm4F5RntxWh1IZAVSLI"
   },
   {
     "rank": 10,
@@ -97,6 +98,6 @@
     "rating": 4.5,
     "downloads": "1B+",
     "price": "Free with Subscription",
-    "icon_url": "https://example.com/icons/netflix.png"
+    "icon_url": "https://images.ctfassets.net/4cd45et68cgf/Rx83JoRDMkYNlMC9MKzcB/2b14d5a59fc3937afd3f03191e19502d/Netflix-Symbol.png?w=700&h=456"
   }
 ]

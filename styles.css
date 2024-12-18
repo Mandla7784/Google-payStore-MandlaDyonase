@@ -220,4 +220,63 @@ a:hover {
   width: 100%;
   display: flex;
   padding: 0.5em 4em;
+  flex-wrap: wrap;
+}
+
+.chart-card {
+  background-color: #ffffff;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s, box-shadow 0.3s;
+  margin: 20px;
+  max-width: 300px;
+  text-align: center;
+}
+
+.chart-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.card-icon {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
+}
+
+.card-content {
+  padding: 15px;
+}
+
+.app-name {
+  font-size: 1.5em;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.category {
+  font-size: 1.2em;
+  color: #666;
+}
+
+.developer {
+  font-size: 1em;
+  color: #888;
+}
+
+.downloads,
+.price,
+.rank {
+  font-size: 0.9em;
+  color: #555;
+}
+
+.price {
+  font-weight: bold;
+}
+
+.rank {
+  margin-top: 5px;
 }
