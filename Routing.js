@@ -4,4 +4,8 @@
  * get all the links and add events
  */
 const routePages = document.querySelectorAll(".page");
-console.log(routePages);
+
+// hide each page
+routePages.forEach((page) => {
+  console.log(page);
+});
