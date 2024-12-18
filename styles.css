@@ -88,3 +88,78 @@ a:hover {
   border-radius: 5px;
   padding: 10px;
 }
+
+/* Games */
+.card-1 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin: 20px;
+  max-width: 300px;
+  background-image: url("./public/Best-Poki-Games-in-2023-copy.webp");
+  backdrop-filter: 10px;
+}
+
+.card-3 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin: 20px;
+  max-width: 300px;
+  background-image: url("./public/game1.avif");
+  backdrop-filter: 10px;
+}
+.card-2 {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.2s;
+  margin: 20px;
+  max-width: 300px;
+  background-image: url("./public/game2.jpeg");
+  backdrop-filter: 10px;
+}
+
+.card-1:hover {
+  transform: scale(1.05);
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.price {
+  font-size: 1.5em;
+  color: #388e3c;
+}
+
+.card-title {
+  font-size: 1.2em;
+  margin: 10px 0;
+  color: #333;
+}
+
+.card-description {
+  font-size: 0.9em;
+  color: #666;
+}
+
+.card-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 10px;
+  cursor: pointer;
+  font-size: 1em;
+  transition: background-color 0.3s;
+}
+
+.card-button:hover {
+  background-color: #0056b3;
+}
