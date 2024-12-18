@@ -19,6 +19,7 @@
   top: 0;
   position: sticky;
   background-color: white;
+  z-index: 100;
 }
 
 .logo-heading {
@@ -139,7 +140,7 @@ a:hover {
   left: 0;
   width: 100%;
   height: 100%;
-  background: rgba(0, 0, 0, 0.5);
+  background: rgba(0, 0, 0, 0.6);
   z-index: 1;
 }
 
@@ -172,12 +173,12 @@ a:hover {
 .card-title {
   font-size: 1.2em;
   margin: 10px 0;
-  color: #333;
+  color: #e2dada;
 }
 
 .card-description {
   font-size: 0.9em;
-  color: #666;
+  color: #f5f2f2;
 }
 
 .card-button {
