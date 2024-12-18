@@ -60,3 +60,31 @@ a:hover {
   width: 100%;
   padding: 0.4em 4em;
 }
+.playnow {
+  position: relative;
+  background-image: url("./public/hero.jpeg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 400px;
+  height: 300px;
+  border-radius: 5px;
+  cursor: pointer;
+  background-color: rgb(53, 119, 70);
+}
+.playnow .content {
+  position: absolute;
+  color: whitesmoke;
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 58px;
+}
+.headline {
+  background-color: #e8f0fe;
+  height: 100px;
+  width: 500px;
+  border-radius: 5px;
+  padding: 10px;
+}
