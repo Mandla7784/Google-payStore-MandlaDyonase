@@ -32,8 +32,8 @@ function displayCharts(charts_list) {
       price,
       icon_url,
     } = chart;
-
-    topChartDivContainer.innerHTML = /*html*/ `
+    console.log(app_name, developer);
+    topChartDivContainer.innerHTML += /*html*/ `
      
         <div class="chart-card">
             <img src="${icon_url}" />
