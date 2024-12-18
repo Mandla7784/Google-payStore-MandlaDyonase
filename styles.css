@@ -206,3 +206,11 @@ a:hover {
   width: 100%;
   display: flex;
 }
+
+.watch-demo {
+  padding: 0.5em 3em;
+  border-radius: 5px;
+  text-decoration: none;
+  background-color: rgb(92, 163, 78);
+  color: white;
+}
