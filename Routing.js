@@ -11,5 +11,10 @@ routePages.forEach((page) => {
 
   // get the links
   const routeLinks = document.querySelectorAll(".link");
-  console.log(routeLinks);
+
+  routeLinks.forEach((link) => {
+    link.addEventListener("click", () => {
+      console.log("Rouiting");
+    });
+  });
 });
