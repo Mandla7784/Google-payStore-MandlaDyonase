@@ -16,7 +16,7 @@ async function getTopChart(path) {
   try {
     const response = await fetch(path);
     const data = await response.json();
-    console.log(data);
+
     displayCharts(data);
   } catch (error) {
     console.log("Error fetching..", error);
@@ -35,7 +35,7 @@ function displayCharts(charts_list) {
       price,
       icon_url,
     } = chart;
-    console.log(app_name, developer);
+
     topChartDivContainer.innerHTML += /*html*/ `
      
     <div class="chart-card">
@@ -74,6 +74,8 @@ function displayApps(url) {
 
 function main() {
   getTopChart(top_charts_url_base_path);
+  displayApps(apps_base_path);
+  displayBooks(books_base_path);
 }
 
 main();
