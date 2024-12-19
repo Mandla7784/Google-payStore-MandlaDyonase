@@ -1,0 +1,40 @@
+{
+  "books": [
+    {
+      "app_name": "Sapiens: A Brief History of Humankind",
+      "icon_url": "https://example.com/icons/sapiens.png",
+      "category": "History",
+      "developer": "Yuval Noah Harari",
+      "downloads": "1,113,264",
+      "price": "$14.99",
+      "rank": 1
+    },
+    {
+      "app_name": "Educated",
+      "icon_url": "https://example.com/icons/educated.png",
+      "category": "Memoir",
+      "developer": "Tara Westover",
+      "downloads": "1,647,930",
+      "price": "$12.99",
+      "rank": 2
+    },
+    {
+      "app_name": "Thinking, Fast and Slow",
+      "icon_url": "https://example.com/icons/thinking_fast_slow.png",
+      "category": "Psychology",
+      "developer": "Daniel Kahneman",
+      "downloads": "530,803",
+      "price": "$15.99",
+      "rank": 3
+    },
+    {
+      "app_name": "The Power of Habit: Why We Do What We Do in Life and Business",
+      "icon_url": "https://example.com/icons/power_of_habit.png",
+      "category": "Self-Help",
+      "developer": "Charles Duhigg",
+      "downloads": "528,649",
+      "price": "$13.99",
+      "rank": 4
+    }
+  ]
+}
