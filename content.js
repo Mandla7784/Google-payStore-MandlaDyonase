@@ -10,7 +10,7 @@ const apps_base_path = "./data/appjs.json";
 /**
  *
  * @param {*} path
- * This is a functio to get top charts using fetch operation
+ * This is a function to get top charts using fetch operation
  */
 async function getTopChart(path) {
   try {
