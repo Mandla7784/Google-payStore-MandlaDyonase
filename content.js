@@ -55,7 +55,13 @@ function displayCharts(charts_list) {
   });
 }
 
-function displayBooks() {}
+function displayBooks(url) {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
+}
 function displayApps(url) {
   fetch(url)
     .then((res) => res.json())
