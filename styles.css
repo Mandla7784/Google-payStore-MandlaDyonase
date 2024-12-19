@@ -51,6 +51,9 @@
   border-radius: 15px;
   text-decoration: none;
 }
+.page {
+  padding: 0.5em 4em;
+}
 
 /* Link hover */
 a:hover {

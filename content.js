@@ -4,6 +4,7 @@
  */
 const topChartDivContainer = document.querySelector(".top-charts");
 const url_base_path = "./data/topCharts.json";
+const appsContainer = document.querySelector(".app-container");
 /**
  *
  * @param {*} path
@@ -51,6 +52,8 @@ function displayCharts(charts_list) {
      `;
   });
 }
+
+function displayApps() {}
 
 //
 
