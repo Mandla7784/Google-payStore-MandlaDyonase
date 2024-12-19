@@ -2,7 +2,7 @@
   "books": [
     {
       "app_name": "Sapiens: A Brief History of Humankind",
-      "icon_url": "https://example.com/icons/sapiens.png",
+      "icon_url": "https://m.media-amazon.com/images/I/41dbMe6FD+L._AC_SY350_QL15_.jpg",
       "category": "History",
       "developer": "Yuval Noah Harari",
       "downloads": "1,113,264",
@@ -11,7 +11,7 @@
     },
     {
       "app_name": "Educated",
-      "icon_url": "https://example.com/icons/educated.png",
+      "icon_url": "https://m.media-amazon.com/images/I/41GE5-l2ptL._AC_SY1000_.jpg",
       "category": "Memoir",
       "developer": "Tara Westover",
       "downloads": "1,647,930",
@@ -20,7 +20,7 @@
     },
     {
       "app_name": "Thinking, Fast and Slow",
-      "icon_url": "https://example.com/icons/thinking_fast_slow.png",
+      "icon_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQc_qWjRGpK-D6XyXGyNPjCrmtX9GW4yMp7Rw&s",
       "category": "Psychology",
       "developer": "Daniel Kahneman",
       "downloads": "530,803",
@@ -29,7 +29,7 @@
     },
     {
       "app_name": "The Power of Habit: Why We Do What We Do in Life and Business",
-      "icon_url": "https://example.com/icons/power_of_habit.png",
+      "icon_url": "https://m.media-amazon.com/images/I/51NKYsxFV9L._SL500_.jpg",
       "category": "Self-Help",
       "developer": "Charles Duhigg",
       "downloads": "528,649",

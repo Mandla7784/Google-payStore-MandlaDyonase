@@ -3,8 +3,10 @@
  * we gonna renddr top charts data uisng innerHTML
  */
 const topChartDivContainer = document.querySelector(".top-charts");
-const url_base_path = "./data/topCharts.json";
+const top_charts_url_base_path = "./data/topCharts.json";
 const appsContainer = document.querySelector(".app-container");
+const books_base_path = "./data/books.json";
+const apps_base_path = "./data/appjs.json";
 /**
  *
  * @param {*} path
@@ -53,12 +55,19 @@ function displayCharts(charts_list) {
   });
 }
 
-function displayApps() {}
+function displayBooks() {}
+function displayApps(url) {
+  fetch(url)
+    .then((res) => res.json())
+    .then((data) => {
+      console.log(data);
+    });
+}
 
 //
 
 function main() {
-  getTopChart(url_base_path);
+  getTopChart(top_charts_url_base_path);
 }
 
 main();

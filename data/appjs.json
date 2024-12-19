@@ -1,0 +1,22 @@
+{
+  "apps": [
+    {
+      "app_name": "Duolingo",
+      "icon_url": "https://play-lh.googleusercontent.com/9G4Yy6E7u7V1Tz5gqU5P2y1W3iLzFZL0E8Wc8V0eK7c5Gq7wFfD3U4QmG8g3oZBqzA=w240-h480-rw",
+      "category": "Education",
+      "developer": "Duolingo",
+      "downloads": "100,000,000+",
+      "price": "Free with in-app purchases",
+      "rank": 1
+    },
+    {
+      "app_name": "Headspace",
+      "icon_url": "https://play-lh.googleusercontent.com/NbG9t2W-6FQ2M8O4nGk2r9F7Pp8h5gN7bU6lKXlW2kR1s0V1E9yB4T8H3H0cH4lZSA=w240-h480-rw",
+      "category": "Health & Fitness",
+      "developer": "Headspace Inc.",
+      "downloads": "10,000,000+",
+      "price": "$12.99/month",
+      "rank": 2
+    }
+  ]
+}
