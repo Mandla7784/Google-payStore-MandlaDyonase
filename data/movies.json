@@ -1,0 +1,32 @@
+[
+  {
+    "title": "The Godfather",
+    "release_year": 1972,
+    "director": "Francis Ford Coppola",
+    "poster_url": "https://m.media-amazon.com/images/I/51rOnIjLqzL._AC_.jpg"
+  },
+  {
+    "title": "Casablanca",
+    "release_year": 1942,
+    "director": "Michael Curtiz",
+    "poster_url": "https://m.media-amazon.com/images/I/81z4k9a6GxL._AC_SL1500_.jpg"
+  },
+  {
+    "title": "Pulp Fiction",
+    "release_year": 1994,
+    "director": "Quentin Tarantino",
+    "poster_url": "https://m.media-amazon.com/images/I/71c05lTE03L._AC_SY679_.jpg"
+  },
+  {
+    "title": "The Shawshank Redemption",
+    "release_year": 1994,
+    "director": "Frank Darabont",
+    "poster_url": "https://m.media-amazon.com/images/I/51NiGlapXlL._AC_.jpg"
+  },
+  {
+    "title": "The Dark Knight",
+    "release_year": 2008,
+    "director": "Christopher Nolan",
+    "poster_url": "https://m.media-amazon.com/images/I/51k0qaipY-L._AC_.jpg"
+  }
+]
