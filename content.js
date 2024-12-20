@@ -59,7 +59,7 @@ function displayBooks(url) {
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
-      console.log(data);
+      const books = data["books"];
     });
 }
 function displayApps(url) {
