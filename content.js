@@ -5,6 +5,7 @@
 const topChartDivContainer = document.querySelector(".top-charts");
 const top_charts_url_base_path = "./data/topCharts.json";
 const appsContainer = document.querySelector(".app-container");
+const booksContainer = document.querySelector(".books-container");
 const books_base_path = "./data/books.json";
 const apps_base_path = "./data/appjs.json";
 /**
@@ -87,6 +88,9 @@ function displayBooks(url) {
         card.appendChild(name);
         card.appendChild(appDownloads);
         card.appendChild(downloadButton);
+
+        // Appending the card to the container
+        booksContainer.appendChild(card);
       });
     });
 }
