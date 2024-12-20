@@ -52,8 +52,6 @@ function displayCharts(charts_list) {
         <p class="rank">Rank: ${rank}</p>
     </div>
 </div>
-
-     
      `;
   });
 }
