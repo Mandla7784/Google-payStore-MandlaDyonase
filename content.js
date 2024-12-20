@@ -6,8 +6,10 @@ const topChartDivContainer = document.querySelector(".top-charts");
 const top_charts_url_base_path = "./data/topCharts.json";
 const appsContainer = document.querySelector(".app-container");
 const booksContainer = document.querySelector(".books-container");
+const moviesContainer = document.querySelector(".movies-container");
 const books_base_path = "./data/books.json";
 const apps_base_path = "./data/appjs.json";
+const urlPath_movies = "./data/movies.json";
 /**
  *
  * @param {*} path
@@ -135,35 +137,48 @@ function displayApps(url) {
     .catch((error) => console.error("Error fetching apps:", error));
 }
 
-function displayMovies(movie_list) {
-  movie_list.forEach((movie) => {
-    const { icon_url, app_name, downloads, price } = movie;
+function displayMovies(path) {
+  fetch(path)
+    .then((response) => response.json())
+    .then((data) => {
+      console.log(data);
 
-    const card = document.createElement("div");
-    const image = document.createElement("img");
-    const appDownloads = document.createElement("p");
-    const name = document.createElement("h2");
-    const downloadButton = document.createElement("button");
+      const movie_list = data;
+      movie_list
+        .forEach((movie) => {
+          const { poster_url, app_name, downloads, price } = movie;
 
-    card.classList.add("card");
-    image.src = `${icon_url}`;
-    image.alt = app_name;
-    name.textContent = app_name;
-    appDownloads.textContent = `Downloads: ${downloads}`;
+          const card = document.createElement("div");
+          const image = document.createElement("img");
+          const appDownloads = document.createElement("p");
+          const name = document.createElement("h2");
+          const downloadButton = document.createElement("button");
 
-    // Set up the download button
-    downloadButton.textContent = "Download";
-    downloadButton.classList.add("download-button");
-    downloadButton.onclick = () => {
-      alert(`Downloading ${app_name}...`);
-    };
+          card.classList.add("card");
+          image.src = `${poster_url}`;
+          image.alt = app_name;
+          name.textContent = app_name;
+          appDownloads.textContent = `Downloads: ${downloads}`;
 
-    // Appending elements to the card
-    card.appendChild(image);
-    card.appendChild(name);
-    card.appendChild(appDownloads);
-    card.appendChild(downloadButton);
-  });
+          // Set up the download button
+          downloadButton.textContent = "Download";
+          downloadButton.classList.add("download-button");
+          downloadButton.onclick = () => {
+            alert(`Downloading ${app_name}...`);
+          };
+
+          // Appending elements to the card
+          card.appendChild(image);
+          card.appendChild(name);
+          card.appendChild(appDownloads);
+          card.appendChild(downloadButton);
+          // appending to container
+          moviesContainer.append(card);
+        })
+        .catch((err) => {
+          console.log("Error fetching...", err.message);
+        });
+    });
 }
 
 //
@@ -172,6 +187,7 @@ function main() {
   getTopChart(top_charts_url_base_path);
   displayApps(apps_base_path);
   displayBooks(books_base_path);
+  displayMovies(urlPath_movies);
 }
 
 main();
