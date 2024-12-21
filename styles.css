@@ -214,10 +214,12 @@ a:hover {
   padding: 0.5em 3em;
   border-radius: 5px;
   text-decoration: none;
-  background-color: rgb(92, 163, 78);
+  background-color: rgb(10, 40, 65);
   color: white;
 }
-
+.watch-demo:hover {
+  color: whitesmoke !important;
+}
 /* top-charts */
 .top-charts {
   width: 100%;
