@@ -301,3 +301,20 @@ a:hover {
   align-items: center;
   padding: 0.5em 2em;
 }
+
+/* serch bar */
+.search-app {
+  background: none;
+  border: 0;
+  cursor: pointer;
+}
+.search-div {
+  width: 250px;
+  height: 40px;
+  background-color: #fbfdff;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5em 1em;
+  border-radius: 5px;
+}
