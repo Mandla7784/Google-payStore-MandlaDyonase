@@ -309,6 +309,9 @@ a:hover {
   cursor: pointer;
 }
 .search-div {
+  top: 80px;
+  right: 10px;
+  position: absolute;
   width: 250px;
   height: 40px;
   background-color: #fbfdff;
