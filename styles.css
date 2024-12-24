@@ -313,13 +313,13 @@ a:hover {
   height: 40px;
   background-color: #fbfdff;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
-  display: flex;
+  display: none;
   justify-content: space-between;
   padding: 0.5em 1em;
   border-radius: 5px;
 }
-.hide-searchdiv {
-  display: none;
+.show-searchdiv {
+  display: flex;
 }
 .search-div input {
   border: none;
@@ -331,4 +331,5 @@ a:hover {
   border: 0;
   border-radius: 5px;
   padding: 0.2em 0.5em;
+  cursor: pointer;
 }
