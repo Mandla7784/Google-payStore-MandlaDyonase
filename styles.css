@@ -318,3 +318,17 @@ a:hover {
   padding: 0.5em 1em;
   border-radius: 5px;
 }
+.hide-searchdiv {
+  display: none;
+}
+.search-div input {
+  border: none;
+  outline: none;
+}
+.search-div button {
+  background-color: #388e3c;
+  color: white;
+  border: 0;
+  border-radius: 5px;
+  padding: 0.2em 0.5em;
+}
