@@ -4,11 +4,12 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Payements</title>
+     <link rel="stylesheet" href="styles.css" />
     <script src="https://sandbox.paypal.com/sdk/js?client-id=AVJp2CuGgypueHwV-1_NemjbVdfkUc2Puq_UOEah7OdcqZOohz05nQGzrOgE-PwQoBUtdHsKNmWVhrZb&components=buttons"></script>
   </body>
   </head>
   <body>
-       <nav class="google-navbar">
+       <nav style="z-index: 1000;" class="google-navbar">
       <img width="100px" src="public/Google_Play-Icon-Logo.wine.svg" alt="" />
       <h2 class="logo-heading">Google Pay</h2>
       <ul style="position: static">
@@ -24,7 +25,9 @@
         </button>
       </div>
     </nav>
-    <div id="paypal-button-container"></div>
+ <main style="width: 100%;height: 100vh; display: flex;justify-content: center;align-items: center;">
+     <div id="paypal-button-container"></div>
+ </main>
     <script>
       paypal
         .Buttons({
