@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payements</title>
+    <script src="https://sandbox.paypal.com/sdk/js?client-id=AVJp2CuGgypueHwV-1_NemjbVdfkUc2Puq_UOEah7OdcqZOohz05nQGzrOgE-PwQoBUtdHsKNmWVhrZb&components=buttons"></script>
+  </body>
+  </head>
+  <body>
+       <nav class="google-navbar">
+      <img width="100px" src="public/Google_Play-Icon-Logo.wine.svg" alt="" />
+      <h2 class="logo-heading">Google Pay</h2>
+      <ul style="position: static">
+        <a class="link" href="#games">Games</a>
+        <a class="link" href="#apps">Apps</a>
+        <a class="link" href="#movies">Movies</a>
+        <a class="link" href="#books">Books</a>
+      </ul>
+
+      <div>
+        <button class="search-app">
+          <i class="fa-solid fa-magnifying-glass"></i>
+        </button>
+      </div>
+    </nav>
+    <div id="paypal-button-container"></div>
+    <script>
+      paypal
+        .Buttons({
+          message: {
+            amount: 100,
+            align: "center",
+            color: "black",
+            position: "top",
+          },
+        })
+        .render("#paypal-button-container");
+    </script>
+    
+</html>
