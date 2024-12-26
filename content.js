@@ -69,36 +69,7 @@ async function displayApps(url) {
   const apps = data["apps"];
 
   apps.forEach((app) => {
-    const { icon_url, app_name, downloads } = app;
-
-    const card = document.createElement("div");
-    const image = document.createElement("img");
-    const appDownloads = document.createElement("p");
-    const name = document.createElement("h2");
-    const downloadButton = document.createElement("button");
-
-    card.classList.add("card");
-    image.src = `${icon_url}`;
-    image.alt = app_name;
-    name.textContent = app_name;
-    appDownloads.textContent = `Downloads: ${downloads}`;
-
-    // Set up the download button
-    downloadButton.textContent = "Download";
-    downloadButton.classList.add("download-button");
-    downloadButton.onclick = () => {
-      alert(`Downloading ${app_name}...`);
-      // window.location = "http://127.0.0.1:5500/payments.html";
-    };
-
-    // Appending elements to the card
-    card.appendChild(image);
-    card.appendChild(name);
-    card.appendChild(appDownloads);
-    card.appendChild(downloadButton);
-
-    // Appending the card to the container
-    appsContainer.appendChild(card);
+    createCardTemplateAndDisplayData(appsContainer, app);
   });
 }
 

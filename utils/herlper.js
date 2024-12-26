@@ -35,7 +35,7 @@ export function createCardTemplateAndDisplayData(container, item) {
     alert(`Downloading ${app_name}...`);
   };
 
-  appDownloads.textContent = `${downloads}`;
+  appDownloads.textContent = `Downloads: ${downloads}`;
   // Appending elements to the card
   card.appendChild(image);
   card.appendChild(name);
