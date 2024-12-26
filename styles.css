@@ -38,19 +38,6 @@
   transition: all ease 0.3s;
 }
 
-.device-catergories {
-  display: flex;
-  align-self: center;
-  gap: 40px;
-  margin-left: 4em;
-}
-
-.device-catergories a {
-  padding: 0.9em 2em;
-  background-color: whitesmoke;
-  border-radius: 15px;
-  text-decoration: none;
-}
 .page {
   padding: 0.5em 4em;
 }
