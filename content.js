@@ -91,45 +91,40 @@ async function displayBooks(url) {
 }
 async function displayApps(url) {
   const data = await getResource(url);
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      const apps = data["apps"];
+  const apps = data["apps"];
 
-      apps.forEach((app) => {
-        const { icon_url, app_name, downloads } = app;
+  apps.forEach((app) => {
+    const { icon_url, app_name, downloads } = app;
 
-        const card = document.createElement("div");
-        const image = document.createElement("img");
-        const appDownloads = document.createElement("p");
-        const name = document.createElement("h2");
-        const downloadButton = document.createElement("button");
+    const card = document.createElement("div");
+    const image = document.createElement("img");
+    const appDownloads = document.createElement("p");
+    const name = document.createElement("h2");
+    const downloadButton = document.createElement("button");
 
-        card.classList.add("card");
-        image.src = `${icon_url}`;
-        image.alt = app_name;
-        name.textContent = app_name;
-        appDownloads.textContent = `Downloads: ${downloads}`;
+    card.classList.add("card");
+    image.src = `${icon_url}`;
+    image.alt = app_name;
+    name.textContent = app_name;
+    appDownloads.textContent = `Downloads: ${downloads}`;
 
-        // Set up the download button
-        downloadButton.textContent = "Download";
-        downloadButton.classList.add("download-button");
-        downloadButton.onclick = () => {
-          alert(`Downloading ${app_name}...`);
-          // window.location = "http://127.0.0.1:5500/payments.html";
-        };
+    // Set up the download button
+    downloadButton.textContent = "Download";
+    downloadButton.classList.add("download-button");
+    downloadButton.onclick = () => {
+      alert(`Downloading ${app_name}...`);
+      // window.location = "http://127.0.0.1:5500/payments.html";
+    };
 
-        // Appending elements to the card
-        card.appendChild(image);
-        card.appendChild(name);
-        card.appendChild(appDownloads);
-        card.appendChild(downloadButton);
+    // Appending elements to the card
+    card.appendChild(image);
+    card.appendChild(name);
+    card.appendChild(appDownloads);
+    card.appendChild(downloadButton);
 
-        // Appending the card to the container
-        appsContainer.appendChild(card);
-      });
-    })
-    .catch((error) => console.error("Error fetching apps:", error));
+    // Appending the card to the container
+    appsContainer.appendChild(card);
+  });
 }
 
 function displayMovies(path) {
