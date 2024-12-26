@@ -4,7 +4,6 @@
  */
 
 import getResource from "./utils/herlper.js";
-console.log(getResource());
 
 const topChartDivContainer = document.querySelector(".top-charts");
 const top_charts_url_base_path = "./data/topCharts.json";
@@ -19,15 +18,13 @@ const urlPath_movies = "./data/movies.json";
  * @param {*} path
  * This is a function to get top charts using fetch operation
  */
-async function getTopChart(path) {
-  try {
-    const response = await fetch(path);
-    const data = await response.json();
 
-    displayCharts(data);
-  } catch (error) {
-    console.log("Error fetching..", error);
-  }
+const data = await getResource(books_base_path);
+console.log(data);
+
+async function getTopChart(path) {
+  const data = getResource(path);
+  displayCharts(data);
 }
 
 function displayCharts(charts_list) {
@@ -187,10 +184,10 @@ function displayMovies(path) {
 //
 
 function main() {
-  getTopChart(top_charts_url_base_path);
-  displayApps(apps_base_path);
-  displayBooks(books_base_path);
-  displayMovies(urlPath_movies);
+  // getTopChart(top_charts_url_base_path);
+  // displayApps(apps_base_path);
+  // displayBooks(books_base_path);
+  // displayMovies(urlPath_movies);
 }
 
 main();
