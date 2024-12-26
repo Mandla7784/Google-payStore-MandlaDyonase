@@ -58,35 +58,7 @@ async function displayBooks(url) {
   const data = await getResource(url);
   const books = data["books"];
   books.forEach((book) => {
-    const { icon_url, app_name, downloads, price } = book;
-
-    const card = document.createElement("div");
-    const image = document.createElement("img");
-    const appDownloads = document.createElement("p");
-    const name = document.createElement("h2");
-    const downloadButton = document.createElement("button");
-
-    card.classList.add("card");
-    image.src = `${icon_url}`;
-    image.alt = app_name;
-    name.textContent = app_name;
-    appDownloads.textContent = `Downloads: ${downloads}`;
-
-    // Set up the download button
-    downloadButton.textContent = "Download";
-    downloadButton.classList.add("download-button");
-    downloadButton.onclick = () => {
-      alert(`Downloading ${app_name}...`);
-    };
-
-    // Appending elements to the card
-    card.appendChild(image);
-    card.appendChild(name);
-    card.appendChild(appDownloads);
-    card.appendChild(downloadButton);
-
-    // Appending the card to the container
-    booksContainer.appendChild(card);
+    createCardTemplateAndDisplayData(booksContainer, book);
   });
 }
 async function displayApps(url) {
@@ -163,8 +135,9 @@ async function displayMovies(path) {
 }
 
 //
-function createCardTemplateAndDisplayData(container) {
+function createCardTemplateAndDisplayData(container, item) {
   // Creates the DOM Elemsts
+  const { icon_url, app_name, downloads, price } = item;
   const card = document.createElement("div");
   const image = document.createElement("img");
   const appDownloads = document.createElement("p");
@@ -183,6 +156,7 @@ function createCardTemplateAndDisplayData(container) {
     alert(`Downloading ${app_name}...`);
   };
 
+  appDownloads.textContent = `${downloads}`;
   // Appending elements to the card
   card.appendChild(image);
   card.appendChild(name);
