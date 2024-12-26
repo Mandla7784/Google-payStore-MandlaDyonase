@@ -14,6 +14,12 @@ export async function getResource(url) {
   }
 }
 
+/**
+ *
+ * @param {*} container
+ * @param {*} item
+ * This is a function that creates a card template to render the parsed data
+ */
 export function createCardTemplateAndDisplayData(container, item) {
   // Creates the DOM Elemsts
   const { icon_url, app_name, downloads, price } = item;

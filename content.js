@@ -81,8 +81,6 @@ async function displayMovies(path) {
   });
 }
 
-//
-
 function main() {
   getTopChart(top_charts_url_base_path);
   displayApps(apps_base_path);
