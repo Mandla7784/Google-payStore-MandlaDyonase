@@ -19,11 +19,8 @@ const urlPath_movies = "./data/movies.json";
  * This is a function to get top charts using fetch operation
  */
 
-const data = await getResource(books_base_path);
-console.log(data);
-
 async function getTopChart(path) {
-  const data = getResource(path);
+  const data = await getResource(path);
   displayCharts(data);
 }
 
@@ -57,45 +54,43 @@ function displayCharts(charts_list) {
   });
 }
 
-function displayBooks(url) {
-  fetch(url)
-    .then((res) => res.json())
-    .then((data) => {
-      const books = data["books"];
-      books.forEach((book) => {
-        const { icon_url, app_name, downloads, price } = book;
+async function displayBooks(url) {
+  const data = await getResource(url);
+  const books = data["books"];
+  books.forEach((book) => {
+    const { icon_url, app_name, downloads, price } = book;
 
-        const card = document.createElement("div");
-        const image = document.createElement("img");
-        const appDownloads = document.createElement("p");
-        const name = document.createElement("h2");
-        const downloadButton = document.createElement("button");
+    const card = document.createElement("div");
+    const image = document.createElement("img");
+    const appDownloads = document.createElement("p");
+    const name = document.createElement("h2");
+    const downloadButton = document.createElement("button");
 
-        card.classList.add("card");
-        image.src = `${icon_url}`;
-        image.alt = app_name;
-        name.textContent = app_name;
-        appDownloads.textContent = `Downloads: ${downloads}`;
+    card.classList.add("card");
+    image.src = `${icon_url}`;
+    image.alt = app_name;
+    name.textContent = app_name;
+    appDownloads.textContent = `Downloads: ${downloads}`;
 
-        // Set up the download button
-        downloadButton.textContent = "Download";
-        downloadButton.classList.add("download-button");
-        downloadButton.onclick = () => {
-          alert(`Downloading ${app_name}...`);
-        };
+    // Set up the download button
+    downloadButton.textContent = "Download";
+    downloadButton.classList.add("download-button");
+    downloadButton.onclick = () => {
+      alert(`Downloading ${app_name}...`);
+    };
 
-        // Appending elements to the card
-        card.appendChild(image);
-        card.appendChild(name);
-        card.appendChild(appDownloads);
-        card.appendChild(downloadButton);
+    // Appending elements to the card
+    card.appendChild(image);
+    card.appendChild(name);
+    card.appendChild(appDownloads);
+    card.appendChild(downloadButton);
 
-        // Appending the card to the container
-        booksContainer.appendChild(card);
-      });
-    });
+    // Appending the card to the container
+    booksContainer.appendChild(card);
+  });
 }
-function displayApps(url) {
+async function displayApps(url) {
+  const data = await getResource(url);
   fetch(url)
     .then((res) => res.json())
     .then((data) => {
@@ -184,10 +179,10 @@ function displayMovies(path) {
 //
 
 function main() {
-  // getTopChart(top_charts_url_base_path);
-  // displayApps(apps_base_path);
-  // displayBooks(books_base_path);
-  // displayMovies(urlPath_movies);
+  getTopChart(top_charts_url_base_path);
+  displayApps(apps_base_path);
+  displayBooks(books_base_path);
+  displayMovies(urlPath_movies);
 }
 
 main();
