@@ -16,6 +16,7 @@ const moviesContainer = document.querySelector(".movies-container");
 const books_base_path = "./data/books.json";
 const apps_base_path = "./data/appjs.json";
 const urlPath_movies = "./data/movies.json";
+
 /**
  *
  * @param {*} path
