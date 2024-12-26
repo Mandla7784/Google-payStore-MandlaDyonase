@@ -23,11 +23,15 @@ export async function getResource(url) {
 export function createCardTemplateAndDisplayData(container, item) {
   // Creates the DOM Elemsts
   const { icon_url, app_name, downloads, price } = item;
-  const card = document.createElement("div");
-  const image = document.createElement("img");
-  const appDownloads = document.createElement("p");
-  const name = document.createElement("h2");
-  const downloadButton = document.createElement("button");
+  const cardTemplate = {
+    card: document.createElement("div"),
+    image: document.createElement("img"),
+    appDownloads: document.createElement("p"),
+    name: document.createElement("h2"),
+    downloadButton: document.createElement("button"),
+  };
+
+  const { card, image, appDownloads, name, downloadButton } = cardTemplate;
 
   card.classList.add("card");
   image.src = `${icon_url}`;
