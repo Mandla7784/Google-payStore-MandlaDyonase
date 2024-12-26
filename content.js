@@ -2,6 +2,10 @@
  * TODO:
  * we gonna renddr top charts data uisng innerHTML
  */
+
+import getResource from "./utils/herlper.js";
+console.log(getResource());
+
 const topChartDivContainer = document.querySelector(".top-charts");
 const top_charts_url_base_path = "./data/topCharts.json";
 const appsContainer = document.querySelector(".app-container");
