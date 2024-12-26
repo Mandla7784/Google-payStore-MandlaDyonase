@@ -3,7 +3,10 @@
  * we gonna renddr top charts data uisng innerHTML
  */
 
-import getResource from "./utils/herlper.js";
+import {
+  getResource,
+  createCardTemplateAndDisplayData,
+} from "./utils/herlper.js";
 
 const topChartDivContainer = document.querySelector(".top-charts");
 const top_charts_url_base_path = "./data/topCharts.json";
@@ -135,37 +138,6 @@ async function displayMovies(path) {
 }
 
 //
-function createCardTemplateAndDisplayData(container, item) {
-  // Creates the DOM Elemsts
-  const { icon_url, app_name, downloads, price } = item;
-  const card = document.createElement("div");
-  const image = document.createElement("img");
-  const appDownloads = document.createElement("p");
-  const name = document.createElement("h2");
-  const downloadButton = document.createElement("button");
-
-  card.classList.add("card");
-  image.src = `${icon_url}`;
-  image.alt = app_name;
-  name.textContent = app_name;
-
-  // Set up the download button
-  downloadButton.textContent = "Download";
-  downloadButton.classList.add("download-button");
-  downloadButton.onclick = () => {
-    alert(`Downloading ${app_name}...`);
-  };
-
-  appDownloads.textContent = `${downloads}`;
-  // Appending elements to the card
-  card.appendChild(image);
-  card.appendChild(name);
-  card.appendChild(appDownloads);
-  card.appendChild(downloadButton);
-
-  // Appending the card to the container
-  container.appendChild(card);
-}
 
 function main() {
   getTopChart(top_charts_url_base_path);
