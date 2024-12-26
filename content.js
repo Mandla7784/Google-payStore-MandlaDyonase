@@ -163,6 +163,7 @@ async function displayMovies(path) {
 }
 
 //
+function creeateCardTemplateAndDisplayData() {}
 
 function main() {
   getTopChart(top_charts_url_base_path);
