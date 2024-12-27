@@ -6,7 +6,7 @@
 import {
   getResource,
   createCardTemplateAndDisplayData,
-} from "./utils/herlper.js";
+} from "../utils/herlper.js";
 
 const topChartDivContainer = document.querySelector(".top-charts");
 const top_charts_url_base_path = "./data/topCharts.json";
