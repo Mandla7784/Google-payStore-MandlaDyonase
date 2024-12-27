@@ -323,3 +323,25 @@ a:hover {
   padding: 0.2em 0.5em;
   cursor: pointer;
 }
+
+@media screen and (max-width: 768px) {
+  .logo-heading {
+    color: white !important;
+    margin-top: 10px;
+  }
+  .logo {
+    display: none;
+  }
+  .google-navbar {
+    flex-direction: column;
+    height: 300px;
+    align-items: start;
+    background-color: black;
+  }
+  .google-navbar ul {
+    flex-direction: column;
+  }
+  ul a {
+    color: white !important;
+  }
+}
