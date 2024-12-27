@@ -56,8 +56,9 @@ a:hover {
   display: none;
 }
 
-.hero-are {
+.hero-area {
   display: flex;
+  flex-direction: column;
   gap: 4em;
   width: 100%;
   padding: 0.4em 4em;
@@ -323,7 +324,7 @@ a:hover {
   padding: 0.2em 0.5em;
   cursor: pointer;
 }
-
+/* small screens */
 @media screen and (max-width: 768px) {
   .search-app {
     display: none;
@@ -350,6 +351,9 @@ a:hover {
 
   /* main */
   .games-container {
+    flex-direction: column;
+  }
+  .movies-container {
     flex-direction: column;
   }
 }
