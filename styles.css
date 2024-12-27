@@ -325,6 +325,9 @@ a:hover {
 }
 
 @media screen and (max-width: 768px) {
+  .search-app {
+    display: none;
+  }
   .logo-heading {
     color: white !important;
     margin-top: 10px;
@@ -343,5 +346,10 @@ a:hover {
   }
   ul a {
     color: white !important;
+  }
+
+  /* main */
+  .games-container {
+    flex-direction: column;
   }
 }
