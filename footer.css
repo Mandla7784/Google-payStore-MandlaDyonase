@@ -11,4 +11,26 @@ footer {
 
 .footer-content-container {
   width: 40%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.footer-content-container a {
+  text-decoration: none;
+  color: black;
+  font-size: 40px;
+  /* margin: 0.7em 0.4em; */
+}
+
+@media screen and (max-width: 768px) {
+  footer {
+    flex-direction: column;
+  }
+  .footer-content-container {
+    width: 100%;
+  }
+  footer p {
+    width: 100%;
+  }
 }
