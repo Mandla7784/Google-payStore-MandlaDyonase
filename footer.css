@@ -23,6 +23,10 @@ footer {
   /* margin: 0.7em 0.4em; */
 }
 
+footer :last-child i {
+  font-size: 40px;
+}
+
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
