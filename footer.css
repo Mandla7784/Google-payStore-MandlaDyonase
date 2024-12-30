@@ -30,9 +30,14 @@ footer :last-child i {
 @media screen and (max-width: 768px) {
   footer {
     flex-direction: column;
+    width: 100%;
+    background-color: whitesmoke !important;
+
+    height: 100%;
   }
   .footer-content-container {
     width: 100%;
+    color: black !important;
   }
   footer p {
     width: 100%;
